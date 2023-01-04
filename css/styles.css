@@ -181,3 +181,35 @@ a{
     
 }
 
+/* list */
+.list{
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.list--item{
+    padding-bottom:1rem;
+}
+
+.list--horizontal{
+    display: flex;
+    overflow: hidden;
+}
+.list--horizontal .list--item{
+    padding-left: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .list{
+        font-size: 1.8rem;
+    }
+    
+}
+
+
+
+
+
+
