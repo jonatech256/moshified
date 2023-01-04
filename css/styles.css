@@ -154,4 +154,30 @@ a{
     
 }
 
+/* badges */
+.badge{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+}
+
+.badge--primary{
+    background-color: rgb(5, 5, 212);
+}
+.badge--secondary{
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width:768px) {
+    .badge{
+        font-size: 1.2rem;
+    }
+    
+}
 
