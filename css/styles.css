@@ -407,6 +407,48 @@ a{
     
 }
 
+/* media */
+.media{
+    display: flex;
+    
+
+}
+.media__content{
+    padding-left: 1.3rem;
+}
+
+.media__icon .icon{
+   position: relative;
+   top: 0.4rem;
+}
+
+.media__title{
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow-wrap: normal;
+    margin-top: 0;
+    color: white;
+}
+
+.media__description{
+    font-size: 2rem;
+    padding-top: 0;
+    margin-top: 0.6rem;
+}
+
+@media screen and (min-width:768px) {
+    .media__title{
+        font-size: 1.8rem;
+    }
+
+    .media__description{
+        font-size: 1.8rem;
+    }
+    
+}
+
 
 
 
