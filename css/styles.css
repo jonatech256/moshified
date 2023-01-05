@@ -495,6 +495,7 @@ a{
     }   
 }
 
+/* grids */
 .grid{
     display: grid;
     grid-template-columns: 0;
@@ -508,6 +509,25 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
+
+/* blocks */
+.block {
+    text-align: center;
+    background-color: black;
+    padding: 6rem 2rem;
+    overflow: hidden;  
+}
+
+.block-skew--left{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+
+.block-skew--right{
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+
+
 
 
 
