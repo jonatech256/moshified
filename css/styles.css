@@ -449,6 +449,54 @@ a{
     
 }
 
+/* call-out */
+.call-out{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+.call-out__title{
+    color: white;
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 4.5rem;
+    margin-top: 0;
+
+}
+
+.call-out__description{
+    color: white;
+    font-size: 2.4rem;
+}
+
+@media screen and (min-width:768px) {
+    .call-out{
+        flex-direction: row;
+    }
+
+    .call-out__title{
+        font-size: 3.2rem;
+      }
+      .call-out__description{
+        font-size: 1.8rem;
+      }
+    .call-out__content{
+    text-align: left;
+    flex-grow: 1;
+    padding-right: 5rem;
+    }
+    .call-out .btn {
+     font-size: 2.2rem;
+    }   
+}
+
+
+
 
 
 
