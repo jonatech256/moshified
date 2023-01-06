@@ -191,6 +191,7 @@ a{
 
 .list--item{
     padding-bottom:1rem;
+
 }
 
 .list--horizontal{
@@ -588,10 +589,58 @@ a{
     margin: 0;
     border-top: 1px solid var(--text-color);
    
+} 
+
 }
 
-    
+/* collapsible */
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+   
 }
+
+.collapsible__header .icon{
+    height: 25px;
+    width: 25px;
+    transition: 0.3s;
+   
+}
+
+.collapsible__header .icon--container{
+    width: 40px;
+    height: 40px;
+}
+
+.collapsible__header .collapsible__title{
+    margin-top: 0;
+     /* color: white; */
+     font-size: 3rem;
+}
+.collapsible__content .list{
+    margin-top:0.5rem;
+   
+}
+
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .icon{
+    transform: rotate(90deg);
+}
+
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    overflow: auto;
+    opacity: 1;
+}
+
 
 
 
