@@ -373,6 +373,19 @@ a{
     justify-self: center;
     place-self: center;
 }
+.card--popular{
+        position: relative;
+    }
+
+    .card--popular .popular__icon{
+        
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: -8px;
+
+
+    }
 
 
 @media screen and (min-width:768px) {
@@ -405,7 +418,15 @@ a{
     .card--content .btn{
         margin-top: 3rem;
     }
-    
+
+    .card--popular .popular__icon{
+        
+        width: 60px;
+        position: absolute;
+        right: 50px;
+        top: -8px;
+    }
+   
 }
 
 /* media */
@@ -670,6 +691,8 @@ a{
     overflow: auto;
     opacity: 1;
 }
+
+
 
 
 
