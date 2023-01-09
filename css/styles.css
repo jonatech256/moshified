@@ -692,6 +692,38 @@ a{
     opacity: 1;
 }
 
+/* quotes */
+.quote .media__title{
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 2rem;
+
+}
+.quote .media__content{
+    margin-left: 0.5rem;
+    font-style: italic;
+}
+.quote .media__description{
+    padding-top: 0;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.quote__content::before{
+    content: open-quote;
+     margin-right: 0.8rem;
+}
+
+.quote__content::after{
+    content: close-quote;
+    margin-left: 0.8rem;
+}
+
+.quote__content{
+    font-style: italic;
+}
+
 
 
 
