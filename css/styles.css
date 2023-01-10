@@ -808,7 +808,7 @@ a{
         text-align: left;
         align-self: center;
     }
-    
+
     .hero__description{
         font-size: 2rem;
     }
@@ -828,6 +828,41 @@ a{
     
 }
 
+/* features */
+.feature__content{
+   display: flex;
+   flex-direction: column;
+   margin: 1rem 2rem;
+}
+.feature__title{
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.feature__description{
+    font-weight: 1.8rem;
+    margin-top: 1.5rem;
+}
+.feature__img-sec{
+    margin-top: 2rem;
+}
+.feature__img{
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .feature__img-sec{
+    
+        align-self: center;
+        justify-self: center;
+        margin-left: 2rem;
+    }
+
+    .feature__img{
+        position: relative;
+        top: 50px;
+    }
+    
+}
 
 
 
