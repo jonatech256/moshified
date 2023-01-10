@@ -12,24 +12,57 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="feature grid grid--1by2">
-    <div class="feature__content">
-        <span class="icon--container icon--container--gray">
-            <svg class="icon icon--secondary">
-                <use xlink:href=" logosandicons/sprite.svg#wordpress"></use>
-            </svg>
-        </span>
-        <h3 class="feature__title">Super Easy to use</h3>
-        <p class="feature__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem eveniet atque nisi. Corrupti deleniti dolores velit consectetur veritatis nobis in repudiandae quis officia tempora, laudantium voluptatum, recusandae sequi. Nobis?</p>
-        <a href="#" class="link">LEARN MORE</a>
-
+<nav class="nav collapsible">
+    <a href=""><img class="nav__logo" src="logosandicons/logo.png" alt=""></a>
+    <svg class="icon icon--white nav__icon">
+        <use xlink:href=" logosandicons/sprite.svg#menu"></use>
+    </svg>
+    <ul class="list list--horizontal collapsible__content">
+        <a href="#">
+            <li class="list--item">Hosting</li>
+        </a>
+        <a href="#">
+            <li class="list--item">VPS</li>
+        </a>
+        <a href="#">
+            <li class="list--item">Domain</li>
+        </a>
+        <a href="#">
+            <li class="list--item">Pricing</li>
+        </a>
+    </ul>
+</nav>
+<header class="container">
+    <div class="hero  grid grid--1by2 block block-skew--right">
+        <div class="hero__content">
+            <h1 class="hero__title">Cloud Hosting For Pros</h1>
+            <p class="hero__description">Deploy your websites in less than 60 seconds</p>
+            <button class="btn btn--accent btn--stretch "> Get started </button>
+        </div>
+        <div class="hero__image__sec">
+            <img class="hero__img" src="logosandicons/banner.png" alt="">
+        </div>
     </div>
-    <div class="feature__img-sec">
-        <img class="feature__img" src=" logosandicons/easy.jpg " alt="">
-
+</header>
+<section  class=" domain-section container">
+    <h2>Starting at $10 per month</h2>
+    <p> distinctio optio, aspernatur repudiandae voluptatum sint dolores? Mollitia ipsum delectus fugit rerum maxime illum vel dolor veritatis assumenda.</p>
+    <div class="input">
+        <input type="text" placeholder=" Enter domain name here...">
+        <button class="btn btn--accent"> <svg class="icon icon--white icon--small">
+                <use xlink:href=" logosandicons/sprite.svg#search"></use>
+            </svg>Search</button>
     </div>
-</div>
-
+    <div class="domain__prices">
+        <p class="domain__items"> <span class="badge badge--primary"> .com $9 </span> </p>
+        <p class="domain__items">.sg $10</p>
+        <p class="domain__items">.space $11</p>
+        <p class="domain__items">.info $14</p>
+        <p class="domain__items">.net $10</p>
+        <p class="domain__items">.xyz $10</p>
+        
+    </div>
+</section>
 <script src="/js/main.js"></script>
 </body>
 </html>
