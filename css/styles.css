@@ -333,11 +333,12 @@ a{
     flex-direction: column;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 7px -10px 30px 5px rgb(128, 128, 128, .5) ;
 }
 
 .card--head{
     color: white;
-    padding:0.5rem 0.5rem;
+    padding:1rem 2rem;
 }
 .card--head--primary{
     background-color: var(--primary-color);
@@ -347,8 +348,8 @@ a{
     background-color: var(--secondary-color);
 }
 .card__name{
-    font-weight: bold;
-    font-size: 2.4rem;
+    font-weight: 600;
+    font-size: 2rem;
     margin-bottom: 0.1rem;
     margin-top: 0.1rem;
 }
@@ -387,6 +388,7 @@ a{
 
 .card--content .list--item{
     padding-top: 1rem;
+    font-size: 2rem;
    
 }
 .card--content .list--item::before{
@@ -396,9 +398,7 @@ a{
 
 .card--content .btn{
     margin-top: 2rem;
-    align-self: center;
-    justify-self: center;
-    place-self: center;
+    
 }
 .card--popular{
         position: relative;
@@ -408,14 +408,13 @@ a{
         
         width: 30px;
         position: absolute;
-        right: 20px;
+        right: 5%;
         top: -8px;
-
-
     }
 
 
 @media screen and (min-width:768px) {
+   
     .card--head{
         padding: 2rem;
     }
@@ -444,13 +443,13 @@ a{
     }
     .card--content .btn{
         margin-top: 3rem;
+        width: 100%;
     }
 
     .card--popular .popular__icon{
-        
-        width: 60px;
+        width: 40px;
         position: absolute;
-        right: 50px;
+        right: 5%;
         top: -8px;
     }
    
@@ -557,6 +556,10 @@ a{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    
+}
+
+@media screen and (min-width:1024px) {
     .grid--1by3{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -957,14 +960,46 @@ a{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows:1fr;
        
-    } 
-
-
-    
-    
+    }   
 }
 
 
+/* plans block */
+
+.plans-block{
+    margin: 5rem 2rem;
+    padding: 2rem 5rem;
+}
+
+.plans-block .card{
+    max-width: 500px;
+    transition: all 0.3s;
+    
+}
+.plans-block .list{
+    display: inline-flex;
+    flex-direction: column;
+}
+.plans-block .btn{
+    align-self: center;
+    width: 100%;
+}
+
+.grid--1by3{
+    gap: 4rem;
+}
+
+.plans-block .card--popular{
+    transform: scale(1.05);
+}
+
+.plans-block .card:hover{
+    transform: scale(1.05);
+}
+
+.plans-block .card--popular:hover{
+    transform: scale(1.1);
+}
 
 
 
