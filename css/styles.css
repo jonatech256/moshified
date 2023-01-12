@@ -573,6 +573,7 @@ a{
     background-color: black;
     padding: 0.5rem 2rem 10rem 2rem;
     overflow: hidden;  
+    width: 100%;
 }
 
 .block-skew--left{
@@ -1026,23 +1027,24 @@ a{
 .showcase-block .block{
     margin: 5rem 0;
     width: 100%;
+    text-align: inherit;
 }
 
 .showcase-img-container{
     align-self: center;
     margin-right: 5rem;
-    justify-self: end;
 }
 
 .showcase__img{
-    width: auto;
-    max-width: 500px;
+    width: 100%;
+    padding: 0;
 }
 
 .showcase__title{
     color: white;
     margin-bottom: 4rem;
     margin-top: 4rem;
+    text-align: center;
 }
 
 .showcase-media-container{
@@ -1057,10 +1059,12 @@ a{
     margin-top: 3rem;
 }
 
+/* testimonial-block */
 .testimonail__block{
     margin: 8rem 2rem 0rem 2rem;
 }
 
+/* callout-block */
 .call-out__block{
     margin: 0rem 12rem 0 12rem;
 }
@@ -1073,6 +1077,7 @@ a{
     position: relative;
     top: 6rem;
 }
+/* footer-block */
 
 .footer-block{
     display: flex;
