@@ -113,6 +113,7 @@ a{
     padding:2.4rem 4.6rem;
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 .btn--primary{
     background-color: var(--primary-color);
@@ -1015,16 +1016,27 @@ a{
 }
 
 /* showcase */
+.showcase-block .grid--1by2 {
+    grid-template-columns: 50% 50%;
+}
+.showcase-block{
+    margin: 6rem 0 4rem 0 ;
+}
+
 .showcase-block .block{
-    width: 100vw;
-    margin: 5rem auto;
+    margin: 5rem 0;
+    width: 100%;
 }
 
 .showcase-img-container{
     align-self: center;
+    margin-right: 5rem;
+    justify-self: end;
 }
+
 .showcase__img{
-    width: 100%;
+    width: auto;
+    max-width: 500px;
 }
 
 .showcase__title{
@@ -1046,13 +1058,40 @@ a{
 }
 
 .testimonail__block{
-    margin: 8rem 2rem 4rem 2rem;
+    margin: 8rem 2rem 0rem 2rem;
 }
 
 .call-out__block{
-    margin: 1rem 12rem;
+    margin: 0rem 12rem 0 12rem;
 }
 .call-out .btn{
     font-size: 1.5rem;
 
+}
+.call-out{
+    padding: 5rem;
+    position: relative;
+    top: 6rem;
+}
+
+.footer-block{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 0;
+    justify-content: center;
+    padding-top: 10rem;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+.footer-block .footer__title{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+}
+
+.footer-links .list__item{
+    margin-top: 2rem;
+    text-align: left;
 }
