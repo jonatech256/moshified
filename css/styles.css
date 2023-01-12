@@ -472,7 +472,7 @@ a{
 
 .media__title{
     text-transform: capitalize;
-    font-size: 2.4rem;
+    font-size: 4rem;
     font-weight: 600;
     line-height: 1.2;
     overflow-wrap: normal;
@@ -488,7 +488,7 @@ a{
 
 @media screen and (min-width:768px) {
     .media__title{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .media__description{
@@ -575,7 +575,7 @@ a{
 }
 
 .block-skew--left{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .block-skew--right{
@@ -1012,4 +1012,47 @@ a{
 }
 .feature-block__header{
     text-align: center;
+}
+
+/* showcase */
+.showcase-block .block{
+    width: 100vw;
+    margin: 5rem auto;
+}
+
+.showcase-img-container{
+    align-self: center;
+}
+.showcase__img{
+    width: 100%;
+}
+
+.showcase__title{
+    color: white;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.showcase-media-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    align-self: center;
+}
+
+.showcase-media-container .media{
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.testimonail__block{
+    margin: 8rem 2rem 4rem 2rem;
+}
+
+.call-out__block{
+    margin: 1rem 12rem;
+}
+.call-out .btn{
+    font-size: 1.5rem;
+
 }
